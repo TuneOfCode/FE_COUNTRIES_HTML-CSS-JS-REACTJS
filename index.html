@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/site.css" />
+    <title>Contries</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <div class="title">Where in the world?</div>
+      <div class="btn mode">
+        <i class="fa fa-moon-o" aria-hidden="true"></i>
+        <span>Dark Mode</span>
+      </div>
+    </div>
+
+    <!-- home page -->
+    <div class="homepage container">
+      <div class="action">
+        <div class="action__search">
+          <span class="icon-search">
+            <i class="fa fa-search"></i>
+          </span>
+          <input
+            id="searchTextId"
+            type="text"
+            placeholder="Search for a country... "
+          />
+          <span class="icon-clear">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </div>
+        <div class="action__paginate">
+          <span class="btn btn-pre">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </span>
+          <input id="paginateTextId" type="text" maxlength="2" value="1" />
+          <span class="spread">/</span>
+          <span class="total-page"></span>
+          <span class="btn btn-next">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </span>
+        </div>
+        <div class="action__filter">
+          <div class="select-region">
+            <div class="select-default">
+              <i class="fa fa-filter" aria-hidden="true"></i>
+              <span class="regionName">Filter by Region</span>
+              <span class="btn-reset">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </span>
+              <i class="fa fa-chevron-down not__active" aria-hidden="true"></i>
+            </div>
+            <ul class="list-countries">
+              <li>Africa</li>
+              <li>Americas</li>
+              <li>Asia</li>
+              <li>Europe</li>
+              <li>Oceania</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="countries">
+        <div class="row">
+          <div class="col"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail page -->
+    <div class="detail-page container not__active">
+      <div class="detail-page__action">
+        <div class="btn action__back">
+          <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+          <span>Back</span>
+        </div>
+      </div>
+      <div class="content">
+        <div class="great-national-flag">
+          <img src="https://flagcdn.com/w320/de.png" alt="flag of Germany" />
+        </div>
+        <div class="country-item">
+          <div class="country__detail">
+            <h3>Belgium</h3>
+            <div class="country__info">
+              <div class="country__info--left">
+                <p><span class="index">Native Name:</span> Belgiê</p>
+                <p><span class="index">Population:</span> 11.319.511</p>
+                <p><span class="index">Region:</span>Europe</p>
+                <p><span class="index">Sub Region:</span> Western Europe</p>
+                <p><span class="index">Capital:</span> Brusssels</p>
+              </div>
+              <div class="country__info--right">
+                <p><span class="index">Top Level Domain:</span> .be</p>
+                <p><span class="index">Currencies:</span>Euro</p>
+                <p>
+                  <span class="index">Languages:</span> Dutch, French, German
+                </p>
+              </div>
+            </div>
+            <div class="border-contries">
+              <div class="btn country-link">France</div>
+              <div class="btn country-link">Germany</div>
+              <div class="btn country-link">Netherlands</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./test.js"></script>
+</html>
